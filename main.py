@@ -1,13 +1,15 @@
+
 from flask import Flask,render_template,request,redirect,url_for
 
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score
-from sklearn.linear_model import *
-from sklearn.metrics import accuracy_score
+# from sklearn.model_selection import train_test_split
+# from sklearn.metrics import r2_score
+# from sklearn.linear_model import *
+# from sklearn.metrics import accuracy_score
 import numpy as np 
-import matplotlib.pyplot as plt
-from sklearn import linear_model
+# import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
 
 
 
@@ -39,7 +41,7 @@ def hello_user(input):
 
     y = y.reshape(-1,1)
 
-    X_train, X_test, y_train, y_test = train_test_split(X,y, train_size=0.7, random_state=2529)
+    # X_train, X_test, y_train, y_test = train_test_split(X,y, train_size=0.7, random_state=2529)
 
 
     #f(x) = xw
